@@ -53,3 +53,11 @@ func TestGetNameGetsTheName(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestBarkGetsWoofed(t *testing.T) {
+	dog := Dog{}
+
+	if dog.Bark() != "Woof!" {
+		t.Fail()
+	}
+}
